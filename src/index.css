@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Shenttpuro';
+  src: url('./assets/typo/ShenttpuroFont.ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Hogback';
+  src: url('./assets/typo/Hogback.otf');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/typo/Roboto.ttf');
+  font-style: normal;
+  font-weight: 500;
+}
