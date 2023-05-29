@@ -50,14 +50,20 @@ const Test = (props) => {
   let contentDisplayer = () => {
     if (testStarted && testOver === false) {
       return (
-        <div className="h-[100%] overflow-y-auto rounded">
-          <div>
+        <div className="h-[100%] w-full  rounded flex items-center justify-around">
+          <p className="text-white   text-4xl font-jap">
+            Cliquez sur la page pour passer à la suivante
+          </p>
+          <div className="h-[100%] overflow-y-auto">
             <img
               src={require(`../assets/pages/page-${index}.JPG`)}
               onClick={() => timeHandler()}
               className=" cursor-pointer"
             />
           </div>
+          <p className="text-white text-4xl font-jap">
+            Vous pouvez défiler chaque page verticalement
+          </p>
         </div>
       );
     }
@@ -65,7 +71,7 @@ const Test = (props) => {
       return (
         <div>
           <h3
-            className={`h-[15vh] text-9xl text-center ${
+            className={`h-[15vh] text-8xl text-center ${
               props.theme === 'light' ? 'text-black' : 'text-white'
             }  font-jap mb-8`}
           >
@@ -74,7 +80,7 @@ const Test = (props) => {
           </h3>
           <div className="flex flex-col justify-center items-center">
             <p
-              className={`text-6xl text-center ${
+              className={`text-5xl text-center ${
                 props.theme === 'light' ? 'text-black' : 'text-white'
               }  font-jap mb-20 w-[60%] mx-auto tracking-wider`}
             >
