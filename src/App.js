@@ -19,7 +19,7 @@ import Test from './pages/Test';
 
 function App() {
   const dispatch = useDispatch();
-  const [theme, setThemeState] = useState('light');
+  const [theme, setThemeState] = useState('dark');
 
   useEffect(() => {
     const theme_store = window.localStorage.getItem('theme');
